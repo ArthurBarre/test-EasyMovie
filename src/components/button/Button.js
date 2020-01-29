@@ -27,9 +27,6 @@ const config = {
   }
 };
 
-let {colors} = config;
-let {sizes} = config;
-
 const StyledButton = styled.button`
   background-color: ${(props) => props.conf.colors[props.type].default};
   font-size: 16px;
