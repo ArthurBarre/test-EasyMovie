@@ -1,0 +1,26 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import * as stories from './Button.stories.js';
+import Button from './Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+<Story name="DefaultButton">{stories.DefaultButton()}</Story>
+
+The button is provided with a callback function in the onClick parameter in Button.
+
+## Primary Button
+<Story name="PrimaryButton">{stories.SecondaryButton()}</Story>
+
+## Secondary Button
+<Story name="SecondaryButton">{stories.PrimaryButton()}</Story>
+
+## Danger Button
+<Story name="DangerButton">{stories.DangerButton()}</Story>
+
+## Disabled Button
+<Story name="DisabledButton">{stories.DisabledButton()}</Story>
+
+<Preview>
+  <Story name="BasicButtonWithCode"><Button>I'm a basic button</Button></Story>
+</Preview>
